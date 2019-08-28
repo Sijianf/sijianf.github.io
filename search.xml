@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[R Coding Reference]]></title>
-    <url>%2F2019%2F08%2F27%2FR-Coding-Reference%2F</url>
-    <content type="text"><![CDATA[Here I uploaded some pages for reference when you are coding in R language.These notes are copied from R programming lectures. I am also generally modifying them to make the notes more helpful. Lecture 1: R IntroductionLecture 2: Factors and MatricesLecture 3: Lists and Data FramesLecture 4: Data Frames and Control StatementLecture 5: Manipulate data frames with dplyrLecture 6: tidyr and readr packageLecture 7: Graphics I: base graphicsLecture 8: Intro to R - Plots Part II - ggplot2]]></content>
-  </entry>
-  <entry>
     <title><![CDATA[Welcome to my blog]]></title>
     <url>%2F2018%2F08%2F30%2FWelcome-to-my-blog%2F</url>
     <content type="text"><![CDATA[This is Sijianf, and I am happy to meet you here. Studying in Emory now, I would like to share my opinions to people and also get your views about this world. I am not a typical coder, most of my work will be linked to SAS, R, or Python. It doesn’t matter, though. Still, Hi, everyone!]]></content>

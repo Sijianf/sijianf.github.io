@@ -1,31 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<search> 
-  
-    
-    <entry>
-      <title>R Coding Reference</title>
-      <link href="/2019/08/27/R-Coding-Reference/"/>
-      <url>/2019/08/27/R-Coding-Reference/</url>
-      <content type="html"><![CDATA[<div id="hbe-security">  <div class="hbe-input-container">  <input type="password" class="hbe-form-control" id="pass" placeholder="Please enter the password to read the blog." />    <label for="pass">Please enter the password to read the blog.</label>    <div class="bottom-line"></div>  </div></div><div id="decryptionError" style="display: none;">Incorrect Password!</div><div id="noContentError" style="display: none;">No content to display!</div><div id="encrypt-blog" style="display:none">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</div><script src="/lib/crypto-js.js"></script><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">]]></content>
-      
-      
-        <tags>
-            
-            <tag> R Reference </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    <entry>
-      <title>Welcome to my blog</title>
-      <link href="/2018/08/30/Welcome-to-my-blog/"/>
-      <url>/2018/08/30/Welcome-to-my-blog/</url>
-      <content type="html"><![CDATA[<p><strong>This is Sijianf, and I am happy to meet you here.</strong></p><p>Studying in Emory now, I would like to share my opinions to people and also get your views about this world. I am not a typical coder, most of my work will be linked to <em>SAS, R, or Python</em>. It doesn’t matter, though.</p><p><strong>Still, Hi, everyone!</strong></p>]]></content>
-      
-      
-    </entry>
-    
-  
-  
+<search>
+  <entry>
+    <title><![CDATA[R Coding Reference]]></title>
+    <url>%2F2019%2F08%2F27%2FR-Coding-Reference%2F</url>
+    <content type="text"><![CDATA[Please enter the password to read the blog. Incorrect Password! No content to display! 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]]></content>
+      <tags>
+        <tag>R Reference</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Welcome to my blog]]></title>
+    <url>%2F2018%2F08%2F30%2FWelcome-to-my-blog%2F</url>
+    <content type="text"><![CDATA[This is Sijianf, and I am happy to meet you here. Studying in Emory now, I would like to share my opinions to people and also get your views about this world. I am not a typical coder, most of my work will be linked to SAS, R, or Python. It doesn’t matter, though. Still, Hi, everyone!]]></content>
+  </entry>
 </search>

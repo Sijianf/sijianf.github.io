@@ -119,6 +119,18 @@
 </script>
 
 
+<script>
+    (function(){
+        if('bios545'){
+            if (prompt('Please type your password') !== 'bios545'){
+                alert('Invalid password！');
+                history.back();
+            }
+        }
+    })();
+</script>
+
+
 
   <link rel="canonical" href="http://yoursite.com/2019/08/27/R-Coding-Reference/"/>
 
@@ -326,6 +338,11 @@
           
 
           
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-file-o"></i>
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+            </span>
+          
 
           
 
@@ -354,7 +371,7 @@
 <div id="decryptionError" style="display: none;">Incorrect Password!</div>
 <div id="noContentError" style="display: none;">No content to display!</div>
 <div id="encrypt-blog" style="display:none">
-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
+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
 </div>
 <script src="/lib/crypto-js.js"></script><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">
       
@@ -530,8 +547,7 @@ U2FsdGVkX19fBL0dPyIm8rgLmf9cRliiTnJ/wOT4BZ/OKmdSopF+dnWwq2fTE9d0NrfRAvgDp+e7FdWu
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-<div class="copyright">&copy; <span itemprop="copyrightYear">2023</span>
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2023</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
@@ -539,13 +555,6 @@ U2FsdGVkX19fBL0dPyIm8rgLmf9cRliiTnJ/wOT4BZ/OKmdSopF+dnWwq2fTE9d0NrfRAvgDp+e7FdWu
 
   
 </div>
-
-<div class="powered-by">
-<i class="fa fa-user-md"></i><span id="busuanzi_container_site_uv">
-  本站访客数:<span id="busuanzi_value_site_uv"></span>次 |   
-</span>
-</div>
-
 
 
   <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
@@ -562,6 +571,26 @@ U2FsdGVkX19fBL0dPyIm8rgLmf9cRliiTnJ/wOT4BZ/OKmdSopF+dnWwq2fTE9d0NrfRAvgDp+e7FdWu
 
 
         
+<div class="busuanzi-count">
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv">
+      <i class="fa fa-user"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+      
+    </span>
+  
+
+  
+    <span class="site-pv">
+      <i class="fa fa-eye"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+      
+    </span>
+  
+</div>
+
 
 
 

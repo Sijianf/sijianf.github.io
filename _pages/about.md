@@ -3,13 +3,13 @@ layout: about
 title: about
 permalink: /
 subtitle: Ph.D. student in Statistics at University of South Carolina #<a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
-address: >
-    <p>sfan at email dot sc dot edu</p>
 
 profile:
   align: right
   image: seattle2023.png
   image_circular: false # crops the image to make it circular
+  address: >
+    <p>sfan at email dot sc dot edu</p>
   # more_info: > 
   #   <p>Department of Statistics</p>
   #   <p>123 your address street</p>
@@ -29,6 +29,6 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am currently a Ph.D. student in Statistics at the University of South Carolina, advised by Prof. Ray Bai. I received my M.S. in Biostatistics from Emory University and my B.S. in Applied Bioscience from Zhejiang University.
+My name is 范思键 (Fàn Sī Jiàn). I am currently a Ph.D. student in Statistics at the University of South Carolina, advised by Dr. [Ray Bai](https://raybai.net/). Before that, I obtained my M.S. degree in Biostatistics from Emory University where I was advised by Dr. [Benjamin Risk](https://thebrisklab.org/), and my B.S. degree in Applied Bioscience from Zhejiang University.
 
-My research focuses on Bayesian statistical learning and optimization for high-dimensional structured data, with an emphasis on biclustering and inductive matrix completion. I am particularly interested in developing scalable algorithms with strong theoretical guarantees, motivated by applications in computational biology and biomedical data analysis.
+My research focuses on Bayesian statistical learning and optimization for high-dimensional structured data, with an emphasis on biclustering and inductive matrix completion. I am also interested in developing scalable algorithms in computational biology and biomedical data analysis with strong theoretical guarantees. If you would like to contact me, please feel free to reach me at [sfan@email.sc.edu](mailto:sfan@email.sc.edu) or [sijianstats@gmail.com](mailto:sijianstats@gmail.com).

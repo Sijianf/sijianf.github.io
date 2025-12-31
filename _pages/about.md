@@ -6,7 +6,7 @@ subtitle: Ph.D. student in Statistics at University of South Carolina #<a href='
 
 profile:
   align: right
-  image: seattle2023.jpg
+  image: seattle2023.png
   image_circular: false # crops the image to make it circular
   # more_info: > 
   #   <p>Department of Statistics</p>

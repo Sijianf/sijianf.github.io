@@ -3,6 +3,8 @@ layout: about
 title: about
 permalink: /
 subtitle: Ph.D. student in Statistics at University of South Carolina #<a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+address: >
+    <p>sfan at email dot sc dot edu</p>
 
 profile:
   align: right

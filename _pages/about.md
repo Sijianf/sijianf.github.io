@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Ph.D. student in Statistics [@] University of South Carolina #<a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: Ph.D. student in Statistics at University of South Carolina #<a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
 
 profile:
   align: right

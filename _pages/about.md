@@ -2,12 +2,13 @@
 layout: about
 title: about
 permalink: /
-subtitle: Ph.D. student in Statistics at University of South Carolina #<a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+# subtitle: #<a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
 
 profile:
   align: right
   image: seattle2023.png
   image_circular: false # crops the image to make it circular
+  title: Ph.D. student in Statistics at University of South Carolina
   address: >
     <p>sfan at email dot sc dot edu</p>
   # more_info: > 

@@ -5,7 +5,7 @@ permalink: /
 # subtitle: #<a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
 
 profile:
-  align: center
+  align: right
   image: seattle2023.png
   image_circular: false # crops the image to make it circular
   title: Ph.D. student in Statistics at University of South Carolina

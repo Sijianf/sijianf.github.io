@@ -296,31 +296,26 @@ ul.task-list input[type="checkbox"] {
 
 .profile.float-right {
   margin-left: 1rem;
-
-  img {
-    margin: auto;
-    max-width: 30%; // Added for desired image size (no default)
-  }
 }
 
 .profile.float-left {
   margin-right: 1rem;
-
-  img {
-    margin: auto;
-    max-width: 30%; // Added for desired image size (no default)
-  }
 }
 
 @media (min-width: 576px) {
   .profile {
-    width: 100%; // Adjusted for longer header width and correct image size (30% by default)
+    width: 30%;
 
     .address {
       p {
         display: block;
       }
     }
+  }
+
+  // Added for longer header width when align == center 
+  .profile.center {
+    width: 100%;
   }
 }
 

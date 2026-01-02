@@ -10,7 +10,7 @@ profile:
   image_circular: false # crops the image to make it circular
   title: Ph.D. student in Statistics at University of South Carolina
   address: >
-    <p>sfan at email dot sc dot edu</p>
+    <p>sfan [at] email [dot] sc [dot] edu</p>
   # more_info: > 
   #   <p>Department of Statistics</p>
   #   <p>123 your address street</p>

@@ -2,7 +2,19 @@
 layout: default
 ---
 <div class="post">
-  {% if page.profile.align != 'center' and page.profile.align != 'left-box' -%}
+  <header class="post-header">
+    <h1 class="post-title">
+      {% if site.title == 'blank' %}
+        <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }}
+        {{ site.last_name }}
+      {% else %}
+        {{ site.title }}
+      {% endif %}
+    </h1>
+    <p class="desc">{{ page.subtitle }}</p>
+  </header>
+
+  {% comment %} {% if page.profile.align != 'center' and page.profile.align != 'left-box' -%}
     <header class="post-header">
       <h1 class="post-title">
         {% if site.title == 'blank' %}
@@ -15,13 +27,26 @@ layout: default
       </h1>
       <p class="desc">{{ page.subtitle }}</p>
     </header>
-  {% endif %}
+  {% endif %} {% endcomment %}
 
   <article>
     {% if page.profile %}
       {% if page.profile.align == 'center' -%}
         <div class="profile center justify-content-center">
-          {%- if page.profile.image %}
+          {% if page.profile.image %}
+            {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
+            {% if page.profile.image_circular %}
+              {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
+            {% else %}
+              {% assign profile_image_class = 'img-fluid z-depth-1 rounded' %}
+            {% endif %}
+            {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px) 30vw, 95vw"{% endcapture %}
+            {%
+              include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=page.profile.image
+              cache_bust=true
+            %}
+          {% endif -%}
+          {% comment %} {%- if page.profile.image %}
             {%- assign profile_image_path = page.profile.image | prepend: 'assets/img/' -%}
 
             {% if page.profile.image_circular %}
@@ -36,7 +61,8 @@ layout: default
               class=profile_image_class
               alt=page.profile.image
             -%}
-          {% endif -%}
+          {% endif -%} {% endcomment %}
+
           <!-- Text -->
           <div class="header" style="margin-bottom: 1rem;">
             <div class="name">
@@ -59,6 +85,7 @@ layout: default
                 {{ page.profile.address }}
               </div>
             {%- endif %}
+
             <!-- Social -->
             <div class="contact-icons">
               {% include social.liquid %}
@@ -69,6 +96,7 @@ layout: default
             </div>
           </div>
         </div>
+
       {% elsif page.profile.align == 'left-box' -%}
         <div class="profile left-box">
           {% if page.profile.image %}
@@ -111,22 +139,14 @@ layout: default
             {% if page.profile.image_circular %}
               {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
             {% else %}
-              {% assign profile_image_class = 'img-fluid z-depth-1
-            rounded' %}
+              {% assign profile_image_class = 'img-fluid z-depth-1 rounded' %}
             {% endif %}
-            {% capture sizes %}(min-width: {{site.max_width}}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px)
-            30vw, 95vw"{% endcapture %}
+            {% capture sizes %}(min-width: {{site.max_width}}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px) 30vw, 95vw"{% endcapture %}
             {%
-              include figure.liquid path = profile_image_path class = profile_image_class sizes = sizes alt = page.profile.image
-              cache_bust = true
+              include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=page.profile.image
+              cache_bust=true
             %}
           {% endif %}
-          {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px)
-      30vw, 95vw"{% endcapture %}
-          {%
-            include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=page.profile.image
-            cache_bust=true
-          %}
       {% endif %}
       {% if page.profile.more_info %}
         <div class="more-info">{{ page.profile.more_info }}</div>
@@ -160,16 +180,17 @@ layout: default
       {% include selected_papers.liquid %}
     {% endif %}
 
-
     <br><br><br>
 
     <!-- Social -->
-    {% if page.social %}
-      <div class="social">
-        <div class="contact-icons">{% include social.liquid %}</div>
+    {% if page.profile.align == 'right' or page.profile.align == 'left' %}
+      {% if page.social %}
+        <div class="social">
+          <div class="contact-icons">{% include social.liquid %}</div>
 
-        <div class="contact-note">{{ site.contact_note }}</div>
-      </div>
+          <div class="contact-note">{{ site.contact_note }}</div>
+        </div>
+      {% endif %}
     {% endif %}
 
     {% if site.newsletter and site.newsletter.enabled and site.footer_fixed %}

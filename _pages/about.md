@@ -8,7 +8,7 @@ profile:
   align: center
   image: seattle2023.png
   image_circular: true # crops the image to make it circular
-  title: Ph.D. Student at University of South Carolina
+  title: PhD @ University of South Carolina
   address: >
     <p>sfan [at] email [dot] sc [dot] edu</p>
   # more_info: > 
@@ -30,7 +30,7 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-My name is 范思键 (Fàn Sī Jiàn). I am currently a Ph.D. student in Statistics at the University of South Carolina, advised by Dr. [Ray Bai](https://raybai.net/). Before that, I obtained my M.S. degree in Biostatistics from Emory University where I was advised by Dr. [Benjamin Risk](https://thebrisklab.org/), and my B.S. degree in Applied Bioscience from Zhejiang University.
+My name is 范思键 (fàn sī jiàn). I am currently a Ph.D. student in Statistics at the University of South Carolina, advised by Dr. [Ray Bai](https://raybai.net/). Before that, I obtained my M.S. degree in Biostatistics from Emory University where I was advised by Dr. [Benjamin Risk](https://thebrisklab.org/), and my B.S. degree in Applied Bioscience from Zhejiang University.
 
 My research focuses on Bayesian statistical learning and optimization for high-dimensional structured data, with an emphasis on biclustering and inductive matrix completion. I am also interested in developing scalable algorithms in computational biology and biomedical data analysis with strong theoretical guarantees. If you would like to contact me, please feel free to reach out. 
 

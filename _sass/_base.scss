@@ -244,7 +244,7 @@ ul.task-list input[type="checkbox"] {
 
   .header {
     text-align: center;
-    font-size: x-large;
+    font-size: xx-large; // Adjusted for larger social icons (x-large by default)
   }
 
   picture {
@@ -255,7 +255,7 @@ ul.task-list input[type="checkbox"] {
 
   img {
     margin: auto;
-    max-width: 25%; // Adjust accordingly
+    max-width: 25%; // Adjusted for desired image size (25% by default)
     min-width: 100px;
   }
 }
@@ -306,7 +306,7 @@ ul.task-list input[type="checkbox"] {
 
 @media (min-width: 576px) {
   .profile {
-    width: 100%;
+    width: 100%; // Adjusted for longer header width and correct image size (30% by default)
 
     .address {
       p {

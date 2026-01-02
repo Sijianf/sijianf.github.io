@@ -202,6 +202,15 @@ ul.task-list input[type="checkbox"] {
   width: 100%;
   margin-bottom: 1rem;
 
+  .name {
+    font-size: xx-large;
+  }
+
+  .title {
+    font-size: large;
+    opacity: 75%;
+  }
+
   .address {
     margin-bottom: 0.25rem;
     font-family: monospace;
@@ -211,15 +220,6 @@ ul.task-list input[type="checkbox"] {
       display: inline-block;
       margin: auto;
     }
-  }
-
-  .name {
-    font-size: xx-large;
-  }
-
-  .title {
-    font-size: large;
-    opacity: 75%;
   }
 
   .more-info {

@@ -15,11 +15,13 @@ layout: default
       </h1>
       <p class="desc">{{ page.subtitle }}</p>
     </header>
-    {%- if page.profile.address %}
-      <div class="address" style="font-size: large;">
-        {{ page.profile.address }}
-      </div>
-    {%- endif %}
+    <div class="header" style="margin-bottom: 1rem;">
+      {%- if page.profile.address %}
+        <div class="address" style="font-size: large;">
+          {{ page.profile.address }}
+        </div>
+      {%- endif %}
+    </div>
   {% endif %}
 
   <article>

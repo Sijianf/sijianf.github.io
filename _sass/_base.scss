@@ -264,14 +264,14 @@ ul.task-list input[type="checkbox"] {
   // Turn off left-box by default
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  // gap: 0rem;
   // align-items: center;
   // text-align: center;
-  align-items: flex-start;
-  text-align: left;
+  // align-items: flex-start;
+  // text-align: left;
 
   .header {
-    // text-align: left;
+    text-align: left;
     font-size: x-large;
   }
 

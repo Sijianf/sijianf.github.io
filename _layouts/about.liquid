@@ -79,7 +79,8 @@ layout: default
             {% include figure.liquid path=profile_image_path class=profile_image_class sizes=sizes alt=page.profile.image cache_bust=true %}
           {% endif %}
           <div class="text">
-            <div class="header" style="margin-bottom: 1rem; text-align: left;">
+            {% comment %} <div class="header" style="margin-bottom: 1rem; text-align: left;"> {% endcomment %}
+            <div class="header">
               <div class="name">
                 {% if site.title == 'blank' -%}
                   <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }}

@@ -242,7 +242,7 @@ ul.task-list input[type="checkbox"] {
 
   .header {
     text-align: center;
-    font-size: xx-large; // Adjusted for larger social icons (x-large by default)
+    font-size: x-large; // Adjusted for larger social icons (x-large by default)
   }
 
   picture {
@@ -261,13 +261,13 @@ ul.task-list input[type="checkbox"] {
 // Addtional left-box profile
 .profile.left-box {
 
-  // Turn off left-box as default (suitable when screen < 576px)
+  // Turn off left-box by default
   display: flex;
   flex-direction: column;
-  align-items: center;
+  // align-items: center;
   text-align: center;
   gap: 5rem;
-  // align-items: flex-start;
+  align-items: flex-start;
 
   .header {
     // text-align: left;
@@ -556,6 +556,22 @@ ul.task-list input[type="checkbox"] {
 
   .contact-note {
     font-size: 0.8rem;
+  }
+}
+
+// Added for contact-icons only if align == center
+.profile.center.contact-icons {
+  font-size: 1.5rem;
+
+  i::before {
+    color: var(--global-text-color);
+    transition-property: all 0.2s ease-in-out;
+  }
+
+  &:hover {
+    i::before {
+      color: var(--global-theme-color);
+    }
   }
 }
 

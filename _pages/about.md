@@ -7,8 +7,8 @@ permalink: /
 profile:
   align: center
   image: seattle2023.png
-  image_circular: false # crops the image to make it circular
-  title: Ph.D. student in Statistics at University of South Carolina
+  image_circular: true # crops the image to make it circular
+  title: Ph.D. Student at University of South Carolina
   address: >
     <p>sfan [at] email [dot] sc [dot] edu</p>
   # more_info: > 

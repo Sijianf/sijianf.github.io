@@ -6,8 +6,7 @@ title: Sijian Fan # the website title (if blank, full name will be used instead)
 first_name: Sijian
 middle_name: 
 last_name: Fan
-contact_note: >
-  Email is the best way to reach me.
+contact_note: > # Email is the best way to reach me.
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   Sijian Fan's personal website.
 footer_text: >

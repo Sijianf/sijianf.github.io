@@ -262,23 +262,14 @@ ul.task-list input[type="checkbox"] {
 .profile.left-box {
 
   // Turn off left-box by default
-  display: flex;
-  flex-direction: column;
-  // gap: 0rem;
-  // align-items: center;
-  // text-align: center;
+  // display: flex;
+  // flex-direction: column;
   // align-items: flex-start;
   // text-align: left;
 
   .header {
     text-align: left;
     font-size: x-large;
-  }
-
-  .text {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 700px;
   }
 
   picture {
@@ -330,10 +321,9 @@ ul.task-list input[type="checkbox"] {
   // Turn on left-box when screen >= 576px
   .profile.left-box {
     width: 100%;
+    display: flex;
     flex-direction: row;
-    align-items: flex-start;
-    gap: 5rem;
-    text-align: left;
+    gap: 1.5rem;
   }
 }
 

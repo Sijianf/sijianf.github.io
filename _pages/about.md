@@ -2,12 +2,12 @@
 layout: about
 title: about
 permalink: /
-# subtitle: #<a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: PhD @ University of South Carolina #<a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
 
 profile:
   align: right
   image: seattle2023.png
-  image_circular: true # crops the image to make it circular
+  image_circular: false # crops the image to make it circular
   title: PhD @ University of South Carolina
   address: >
     <p>sfan [at] email [dot] sc [dot] edu</p>

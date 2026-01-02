@@ -168,11 +168,9 @@ layout: default
       {% include selected_papers.liquid %}
     {% endif %}
 
-    <br><br><br>
-
     <!-- Social -->
     {% comment %} Display Social only if align is: "left" or "right" {% endcomment %}
-    {% if page.profile.align == 'right' or page.profile.align == 'left' %}
+    {% if page.profile.align == 'left' or page.profile.align == 'right' %}
       {% if page.social %}
         <div class="social">
           <div class="contact-icons">{% include social.liquid %}</div>

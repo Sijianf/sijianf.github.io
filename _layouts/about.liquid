@@ -14,6 +14,11 @@ layout: default
         {% endif %}
       </h1>
       <p class="desc">{{ page.subtitle }}</p>
+      {%- if page.profile.address %}
+        <div class="address" style="font-size: large;">
+          {{ page.profile.address }}
+        </div>
+      {%- endif %}
     </header>
   {% endif %}
 
@@ -135,7 +140,6 @@ layout: default
               cache_bust=true
             %}
           {% endif %}
-      {% endif %}
       {% if page.profile.more_info %}
         <div class="more-info">{{ page.profile.more_info }}</div>
       {% endif %}

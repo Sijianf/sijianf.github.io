@@ -234,7 +234,7 @@ ul.task-list input[type="checkbox"] {
   }
 }
 
-// Addtional centered profile
+// Addtional center profile
 .profile.center {
   margin: auto;
   margin-bottom: 1rem;
@@ -314,6 +314,11 @@ ul.task-list input[type="checkbox"] {
   }
 
   // Added for longer header width when align == center 
+  .profile.center {
+    width: 100%;
+  }
+
+  // Added for longer header width when align == left-box 
   .profile.center {
     width: 100%;
   }

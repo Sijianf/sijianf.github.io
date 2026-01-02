@@ -134,6 +134,8 @@ layout: default
       {% include news.liquid limit=true %}
     {% endif %}
 
+    <br>
+
     <!-- Latest posts -->
     {% if page.latest_posts and page.latest_posts.enabled %}
       <h2>
@@ -142,6 +144,8 @@ layout: default
       {% include latest_posts.liquid %}
     {% endif %}
 
+    <br>
+
     <!-- Selected papers -->
     {% if page.selected_papers %}
       <h2>
@@ -149,6 +153,8 @@ layout: default
       </h2>
       {% include selected_papers.liquid %}
     {% endif %}
+
+    <br>
 
     <!-- Social -->
     {% comment %} Display Social only if align is: "left" or "right" {% endcomment %}

@@ -14,12 +14,12 @@ layout: default
         {% endif %}
       </h1>
       <p class="desc">{{ page.subtitle }}</p>
+      {% if page.profile.address %}
+        <div class="address" style="font-size: medium; font-family: monospace; opacity: 75%;">
+          {{ page.profile.address }}
+        </div>
+      {% endif %}
     </header>
-    {% if page.profile.address %}
-      <div class="address" style="font-size: medium; font-family: monospace; opacity: 75%">
-        {{ page.profile.address }}
-      </div>
-    {% endif %}
   {% endif %}
 
   <article>

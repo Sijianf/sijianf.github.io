@@ -14,12 +14,12 @@ layout: default
         {% endif %}
       </h1>
       <p class="desc">{{ page.subtitle }}</p>
-      {%- if page.profile.address %}
-        <div class="address" style="font-size: large;">
-          {{ page.profile.address }}
-        </div>
-      {%- endif %}
     </header>
+    {%- if page.profile.address %}
+      <div class="address" style="font-size: large;">
+        {{ page.profile.address }}
+      </div>
+    {%- endif %}
   {% endif %}
 
   <article>
@@ -39,23 +39,6 @@ layout: default
               cache_bust=true
             %}
           {% endif -%}
-          {% comment %} {%- if page.profile.image %}
-            {%- assign profile_image_path = page.profile.image | prepend: 'assets/img/' -%}
-
-            {% if page.profile.image_circular %}
-              {%- assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' -%}
-            {% else %}
-              {%- assign profile_image_class = 'img-fluid z-depth-1 rounded' -%}
-            {% endif %}
-
-            {%
-              include figure.liquid
-              path=profile_image_path
-              class=profile_image_class
-              alt=page.profile.image
-            -%}
-          {% endif -%} {% endcomment %}
-
           <!-- Text -->
           <div class="header" style="margin-bottom: 1rem;">
             <div class="name">
@@ -80,16 +63,10 @@ layout: default
             {%- endif %}
 
             <!-- Social -->
-            <div class="contact-icons">
-              {% include social.liquid %}
-            </div>
-
-            <div class="contact-note">
-              {{ site.contact_note }}
-            </div>
+            <div class="contact-icons">{% include social.liquid %}</div>
+            <div class="contact-note">{{ site.contact_note }}</div>
           </div>
         </div>
-
       {% elsif page.profile.align == 'left-box' -%}
         <div class="profile left-box">
           {% if page.profile.image %}
@@ -141,6 +118,7 @@ layout: default
             %}
           {% endif %}
       {% endif %}
+
       {% if page.profile.more_info %}
         <div class="more-info">{{ page.profile.more_info }}</div>
       {% endif %}
@@ -179,7 +157,6 @@ layout: default
       {% if page.social %}
         <div class="social">
           <div class="contact-icons">{% include social.liquid %}</div>
-
           <div class="contact-note">{{ site.contact_note }}</div>
         </div>
       {% endif %}

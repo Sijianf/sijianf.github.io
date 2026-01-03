@@ -6,7 +6,7 @@ subtitle: PhD @ University of South Carolina #<a href='#'>Affiliations</a>. Addr
 
 profile:
   align: center
-  image: seattle2023light.png
+  image: seattle2023flip.png
   image_circular: true # crops the image to make it circular
   title: PhD @ University of South Carolina
   address: >

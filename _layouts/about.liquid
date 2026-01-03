@@ -124,18 +124,18 @@ layout: default
       </div>
     {% endif %}
 
-    <div class="clearfix">{{ content }}</div>
-
-    <!-- Social -->
-    {% comment %} Display Social only if align is: "left" or "right" {% endcomment %}
-    {% if page.profile.align == 'left' or page.profile.align == 'right' %}
-      {% if page.social %}
-        <div class="social">
-          <div class="contact-icons">{% include social.liquid %}</div>
-          <div class="contact-note">{{ site.contact_note }}</div>
-        </div>
-      {% endif %}
-    {% endif %} 
+    <div class="clearfix">{{ content }}
+      <!-- Social -->
+      {% comment %} Display Social only if align is: "left" or "right" {% endcomment %}
+      {% if page.profile.align == 'left' or page.profile.align == 'right' %}
+        {% if page.social %}
+          <div class="social">
+            <div class="contact-icons">{% include social.liquid %}</div>
+            <div class="contact-note">{{ site.contact_note }}</div>
+          </div>
+        {% endif %}
+      {% endif %} 
+    </div>
     
     <br>
 

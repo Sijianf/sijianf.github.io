@@ -116,9 +116,6 @@ layout: default
               cache_bust=true
             %}
           {% endif %}
-          <!-- Social -->
-          <div class="contact-icons">{% include social.liquid %}</div>
-          <div class="contact-note">{{ site.contact_note }}</div>
       {% endif %}
 
       {% if page.profile.more_info %}
@@ -128,6 +125,19 @@ layout: default
     {% endif %}
 
     <div class="clearfix">{{ content }}</div>
+
+    <!-- Social -->
+    {% comment %} Display Social only if align is: "left" or "right" {% endcomment %}
+    {% if page.profile.align == 'left' or page.profile.align == 'right' %}
+      {% if page.social %}
+        <div class="social">
+          <div class="contact-icons">{% include social.liquid %}</div>
+          <div class="contact-note">{{ site.contact_note }}</div>
+        </div>
+      {% endif %}
+    {% endif %} 
+    
+    <br>
 
     <!-- News -->
     {% if page.announcements and page.announcements.enabled %}
@@ -158,17 +168,6 @@ layout: default
     {% endif %}
 
     <br>
-
-    <!-- Social -->
-    {% comment %} Display Social only if align is: "left" or "right" {% endcomment %}
-    {% comment %} {% if page.profile.align == 'left' or page.profile.align == 'right' %}
-      {% if page.social %}
-        <div class="social">
-          <div class="contact-icons">{% include social.liquid %}</div>
-          <div class="contact-note">{{ site.contact_note }}</div>
-        </div>
-      {% endif %}
-    {% endif %} {% endcomment %}
 
     {% if site.newsletter and site.newsletter.enabled and site.footer_fixed %}
       {% include newsletter.liquid center=true %}

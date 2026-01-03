@@ -7,6 +7,16 @@
   year        = {2026+},
   journal     = {Preparation},
   abbr        = {Preparation},
+  abstract    = {
+                 Binary biclustering is a crucial analytical technique for identifying local patterns in binary data matrices, with applications spanning genomics, text mining, and market analysis. In this study, we propose a novel statistical methodology for binary biclustering called Binary Spike-and-Slab Lasso Biclustering (BiSSLB), which enhances both accuracy and interpretability. Our approach is based on a logistic matrix factorization model with spike-and-slab lasso priors that enable adaptive shrinkage of latent spaces to exact zeros. To automatically determine the number of biclusters, we incorporate Indian Buffet Process (IBP) priors, which induce column-wise sparsity in the latent space. Furthermore, we employ a highly efficient coordinate descent method with proximal steps, allowing for scalable estimation in large-scale real-world applications.
+                 
+                 <br><br>
+                 To assess the effectiveness of our method, we conduct extensive comparisons against established biclustering techniques, including Bimax, BiBit, iBBiG, and GBC. Performance is evaluated using both simulated datasets and real gene expression datasets, with key metrics including clustering error (CE), consensus score (CS), recovery, relevance, sensitivity, specificity, Matthews correlation coefficient (MCC), and the number of biclusters (K). Experimental results demonstrate that our proposed method accurately estimates the true number of biclusters, regardless of overlapping regions or background noise. Additionally, our method consistently outperforms state-of-the-art approaches in binary biclustering, achieving higher CE, CS, and MCC—three comprehensive metrics for overall comparison.
+                 
+                 <br><br>
+                 The proposed methodology advances binary biclustering by offering improved bicluster determination, enhanced robustness to noisy data, and greater interpretability in binary gene expression analysis. Future research directions include integrating side information into the model and extending it to multi-class data, further enhancing its applicability for differential gene expression analysis, as well as broader domains such as recommender systems, drug discovery, and bibliometric studies.
+                 },
+  github      = {https://github.com/Sijianf/BiSSLB},
   bibtex_show = {true},
   selected    = {true}
 }
@@ -17,6 +27,19 @@
   year        = {2026+},
   journal     = {Preparation},
   abbr        = {Preparation},
+  abstract    = {
+                 Matrix completion problems increasingly arise in applications where, in addition to a partially observed matrix, rich side information is available on the rows and columns. Inductive matrix completion (IMC) incorporates such side features to improve prediction, but most existing methods do not explicitly perform feature selection, which is crucial when side information is high-dimensional, heterogeneous in quality, or both. In computational drug repositioning, for example, integrating large-scale genetic and clinical features can enhance the prediction of novel drug--disease associations, yet it is equally important to identify which features are truly informative.
+                 
+                 <br><br>
+                 Existing IMC methods with feature selection, such as sparse-group penalty inductive matrix completion (SGIMC), encourage row-wise sparsity in the factor matrices and therefore select side features at the group level. However, SGIMC impose uniform shrinkage across features and assume that each selected feature affects all rows or all columns of the target matrix. This can be overly restrictive in practice, especially for binary response matrices that arise in 1-bit matrix completion settings, such as drug--disease association matrices.
+                 
+                 <br><br>
+                 We propose binary inductive matrix completion with spike-and-slab group lasso (BiSSGL), a Bayesian framework for IMC with binary outcomes that performs adaptive, group-structured feature selection through spike-and-slab group lasso priors on the latent matrices. BiSSGL yields sparse estimates of the latent factors, enabling automatic identification of influential row and column side features while allowing their effects to vary across different entries of the matrix. Simulation studies indicate that BiSSGL can achieve superior predictive performance in matrix completion while recovering the most informative side features.
+                 
+                 <br><br>
+                 We outline how BiSSGL can be applied to drug repositioning, where side information includes genomic and pharmacological annotations and chemical properties, and discuss ongoing work on extending the algorithm to more complex high-dimensional side information, conducting large-scale simulations to assess scalability, and implementing BiSSGL on non-binary scenarios.
+                 },
+  github      = {https://github.com/Sijianf/BiSSGL},
   bibtex_show = {true},
   selected    = {true}
 }
@@ -31,15 +54,43 @@
   pages       = {30--38},
   year        = {2024},
   publisher   = {S. Karger AG},
+  abstract    = {
+                 Introduction: Localized non-inheritable developmental defects of tooth enamel (DDE) are classified as enamel hypoplasia (EH), opacity (OP), and post-eruptive breakdown (PEB) using the enamel defects index. To better understand the etiology of DDE, we assessed the linkages amongst exposome variables for these defects during the specific time duration for enamel mineralization of the human primary maxillary central incisor enamel crowns. In general, these two teeth develop between 13 and 14 weeks in utero and 3--4 weeks postpartum of a full-term delivery, followed by tooth eruption at about 1 year of age.
+                 
+                 <br><br>
+                 Methods: We utilized existing datasets for mother--child dyads that encompassed 12 weeks’ gestation through birth and early infancy, and child DDE outcomes from digital images of the erupted primary maxillary central incisor teeth. We applied a Bayesian modeling paradigm to assess the important predictors of EH, OP, and PEB.
+                 
+                 <br><br>
+                 Results: The results of Gibbs variable selection showed a key set of predictors: mother’s prepregnancy body mass index (BMI); maternal serum concentrations of calcium and phosphorus at gestational week 28; child’s gestational age; and both mother’s and child’s functional vitamin D deficiency (FVDD). In this sample of healthy mothers and children, significant predictors for OP included the child having a gestational period greater than 36 weeks and FVDD at birth, and for PEB included a mother’s prepregnancy BMI less than 21.5 and higher serum phosphorus concentration at week 28.
+                 
+                 <br><br>
+                 Conclusion: In conclusion, our methodology and results provide a roadmap for assessing timely biomarker measures of exposures during specific tooth development to better understand the etiology of DDE for future prevention.
+                 },
   bibtex_show = {true},
   selected    = {true}
 }
 
 @article{lee2022prophylactic,
   author      = {Lee, Scott J and Fan, Sijian and Guo, Mian and Majdalany, Bill S and Newsome, Janice and Duszak Jr, Richard and Gichoya, Judy and Benjamin, Elizabeth R and Kokabi, Nima},
-  journal     = {Clinical Imaging},
   title       = {Prophylactic IVC filter placement in patients with severe intracranial, spinal cord, and orthopedic injuries at high thromboembolic event risk: a utilization and outcomes analysis of the National Trauma Data Bank},
+  journal     = {Clinical Imaging},
   abbr        = {Clin. Imaging},
+  abstract    = {
+                 <strong>Purpose.</strong>
+                 To determine relationships between prophylactic inferior vena cava filter (IVCF) insertion and pulmonary embolism (PE), deep venous thrombosis (DVT), and in-hospital mortality outcomes in patients with severe traumatic pelvic/lower extremity, intracranial, and spinal cord injuries.
+                 
+                 <br><br>
+                 <strong>Methods.</strong>
+                 Adult patients with severe traumatic pelvic/lower extremity, intracranial, and spinal cord injuries admitted to level I--IV trauma centers were selected from the National Trauma Data Bank (NTDB). IVCFs inserted within 48 hours after admission and before a lower extremity venous ultrasound were defined as prophylactic. Associations between prophylactic IVCF insertion and PE, DVT, and overall mortality were estimated using logistic regression models after propensity score matching.
+                 
+                 <br><br>
+                 <strong>Results.</strong>
+                 Of 462,838 patients, 11,938 (2.6\%) underwent prophylactic IVCF insertion. Prophylactic IVCF utilization decreased over time (6.3\% in 2008 to 1.8\% in 2015). Prophylactic IVCF placement was positively associated with PE (OR: 5.25, p < 0.01) and DVT (OR: 5.55, p < 0.01), but negatively associated with in-hospital mortality (OR: 0.46, p < 0.01).
+                 
+                 <br><br>
+                 <strong>Conclusion.</strong>
+                 Prophylactic IVCF insertion was negatively associated with in-hospital mortality but positively associated with venous thromboembolism. Further research on prophylactic IVCF use in trauma patients with specific severe injury patterns is warranted.
+                 },
   volume      = {91},
   pages       = {134--140},
   year        = {2022},
@@ -49,14 +100,28 @@
 }
 
 @article{tuchayi2022comparative,
-  author    = {Tuchayi, Abuzar Moradi and Nezami, Nariman and Zhang, Yuchen and Hanna, Tarek N and Johnson, Jamlik-Omari and Newsome, Janice and Fan, Sijian and Duszak Jr, Richard and Benjamin, Elizabeth R and Nguyen, Jonathan and others},
-  journal   = {Clinical Imaging},
-  title     = {Comparative effectiveness of pelvic arterial embolization versus laparotomy in adults with pelvic injuries: a National Trauma Data Bank analysis},
-  abbr      = {Clin. Imaging},
-  volume    = {86},
-  pages     = {75--82},
-  year      = {2022},
-  publisher = {Elsevier}
+  author      = {Tuchayi, Abuzar Moradi and Nezami, Nariman and Zhang, Yuchen and Hanna, Tarek N and Johnson, Jamlik-Omari and Newsome, Janice and Fan, Sijian and Duszak Jr, Richard and Benjamin, Elizabeth R and Nguyen, Jonathan and others},
+  journal     = {Clinical Imaging},
+  title       = {Comparative effectiveness of pelvic arterial embolization versus laparotomy in adults with pelvic injuries: a National Trauma Data Bank analysis},
+  abbr        = {Clin. Imaging},
+  volume      = {86},
+  pages       = {75--82},
+  year        = {2022},
+  publisher   = {Elsevier},
+  abstract    = {
+                 Purpose: To compare the clinical outcomes and trends of arterial embolization (AE) versus laparotomy used in the management of pelvic trauma.
+                 
+                 <br><br>
+                 Materials and methods: Adult patients with pelvic injuries were identified using the National Trauma Data Bank (NTDB) from 2007 to 2015. Patients with non-pelvic life-threatening injuries were excluded. Patients were grouped into operatively managed pelvic ring injuries, laparotomy ± fixation, AE ± fixation, and laparotomy and AE ± fixation. Using linear mixed regression and logistic regression models, hospital length of stay (LOS), ICU days, ventilator days, and mortality across different therapies were compared. A propensity score weighting method was used to further eliminate treatment selection bias and compare outcomes between AE and laparotomy.
+                 
+                 <br><br>
+                 Results: Of 7473 pelvic trauma patients, 1226 (16.4%) patients were only operatively managed. A total of 3730 patients (49.9%) underwent laparotomy, 2136 (28.6%) underwent AE, and 381 (5.1%) underwent both laparotomy and AE. The year of injury, patient age, gender, race, injury severity, and presence of shock were predictors of receipt of different therapies (P < 0.001 for all). After adjusting for these confounding factors, mortality was lower in the AE group compared with the laparotomy group (6.6% vs. 20.6%, P < 0.001). In addition, LOS and ICU days were shorter in the AE group than in the laparotomy group (P < 0.001).
+                 
+                 <br><br>
+                 Conclusion: Arterial embolization in patients with pelvic injuries is associated with lower mortality, as well as shorter hospital length of stay and ICU stays compared to laparotomy.
+                 },
+  bibtex_show = {true},
+  selected    = {false}
 }
 
 @article{chahine2021management,
@@ -68,6 +133,18 @@
   pages       = {S138--S147},
   year        = {2021},
   publisher   = {Elsevier},
+  abstract    = {
+                 Background: To evaluate the utilization and efficacy of various treatments for management of adult patients with splenic trauma, highlighting the evolving role of splenic artery embolization.
+                 
+                 <br><br>
+                 Materials and Methods: The National Trauma Data Bank (NTDB) was queried for patients who sustained splenic trauma between 2007 and 2015, excluding those with death on arrival and selected nonsplenic high-grade injuries. Patients were categorized into nonoperative management (NOM), embolization, splenectomy, splenic repair, and combined treatment groups. Evaluated outcomes included hospital length of stay (LOS), intensive care unit LOS, mortality, and failures of NOM and embolization.
+                 
+                 <br><br>
+                 Results: Overall, 117,743 patients with splenic-predominant trauma were included. Over the 9-year study period, 85,793 (72.9%) were treated with NOM, 21,999 (18.9%) with splenectomy, 3895 (3.3%) with embolization, and 2131 (1.8%) with splenic repair. From 2007 to 2015, mortality rates declined from 7.6% to 4.7%. The rate of NOM did not significantly change over time, while embolization increased by 369% (1.3% to 4.8%). Failure of NOM decreased from 4.4% in 2007 to 3.4% in 2015. Across all injury grades, NOM had the shortest LOS (8.3 days), followed by splenic repair (12.3 days), embolization (12.6 days), and splenectomy (13.8 days) (p < 0.001). After adjustment for clinical factors including injury severity, mortality rates were 7.1% for splenectomy, 3.2% for embolization, and 2.5% for NOM.
+                 
+                 <br><br>
+                 Conclusion: Most patients with splenic-dominant blunt trauma are managed with nonoperative management. Over time, the use of embolization has increased while open surgery has declined, and mortality has improved across all treatment methods. Compared with splenectomy, embolization is associated with shorter hospital length of stay but remains relatively infrequently used.
+                 },
   bibtex_show = {true},
   selected    = {true}
 }
@@ -82,6 +159,18 @@
   pages       = {692--702},
   year        = {2021},
   publisher   = {Elsevier},
+  abstract    = {
+                 Purpose: To quantify changes in the management of pediatric patients with isolated splenic injury from 2007 to 2015.
+                 
+                 <br><br>
+                 Materials and Methods: Patients under 18 years old with registered splenic injury in the National Trauma Data Bank (2007--2015) were identified. Splenic injuries were categorized into five management types: nonoperative management (NOM), embolization, splenic repair, splenectomy, or combination therapy. Linear mixed models accounting for confounding variables were used to examine the direct impact of management on length of stay (LOS), intensive care unit (ICU) days, and ventilator days.
+                 
+                 <br><br>
+                 Results: Of included patients (n = 24,128), 90.3% (n = 21,789), 5.6% (n = 1,361), and 2.7% (n = 640) had NOM, splenectomy, and embolization, respectively. From 2007 to 2015, the rate of embolization increased from 1.5% to 3.5%, and the rate of splenectomy decreased from 6.9% to 4.4%. When combining injury grades, NOM was associated with the shortest LOS (5.1 days), ICU days (1.9 days), and ventilator days (0.5 day). Splenectomy was associated with longer LOS (10.1 days), ICU days (4.5 days), and ventilator days (2.1 days) compared with NOM. The average failure rate of NOM was 1.5% (180 failures out of 12,378 cases), and average embolization failure was 1.3% (6 failures out of 456 cases). Splenic artery embolization was associated with lower mortality than splenectomy (OR: 0.10, P < 0.001). No statistically significant difference in mortality was observed between embolization and NOM (OR: 0.96, P = 1.0).
+                 
+                 <br><br>
+                 Conclusions: In pediatric splenic injury, nonoperative management is the most utilized approach and is associated with favorable outcomes, most notably in grades III to V injuries. When intervention is required, embolization is effective and increasingly utilized, particularly in lower grade injuries.
+                 },
   bibtex_show = {true},
   selected    = {true}
 }
@@ -92,6 +181,16 @@
   abbr        = {Thesis},
   school      = {Emory University},
   year        = {2020},
+  abstract    = {
+                 Independent component analysis (ICA) has been increasingly used to separate sources and extract features in signal processing and neuroimaging studies. To overcome its computational problems with local optima, as well as problems with non-smooth and non-convex objective functions, relax and split optimization was applied in this study and comparisons were made between the refined algorithms and the popular FastICA algorithm. A tuning parameter was used to control the relaxation and sparsity level of the Relax-Laplace method (with an objective function derived from the Laplace density), and to control the relaxation level of the Relax-logistic method (with an objective function derived from the logistic density).
+                 
+                 <br><br>
+                 We conducted a simulation study to examine the impact of the tuning parameter on accuracy and sensitivity to initialization. We found that smaller values of the tuning parameter can lead to accurate estimates of the components while having fewer issues with local optima relative to FastICA, whereas larger values can result in inaccuracies. Running 1000 times with a pool of 50 initializations, we found that the Relax-Laplace algorithm was the most accurate and consistent compared with Relax-logistic, FastICA-logistic, and FastICA-tanh.
+                 
+                 <br><br>
+                 We conducted a multi-subject analysis of functional magnetic resonance imaging (fMRI) data from the Human Connectome Project using Relax-Laplace, FastICA-logistic, and FastICA-tanh. In a pool of 50 initializations, the Relax-Laplace method returned the same result for all initializations, whereas both FastICA-logistic and FastICA-tanh converged to the argmax estimate in just over half of the initializations. Moreover, the Relax-Laplace produced sparse representations for the rs-fMRI data that highlight features of resting-state networks.
+                 },
+  github      = {https://github.com/Sijianf/SparseICA_old},
   bibtex_show = {true},
   selected    = {true}
 }

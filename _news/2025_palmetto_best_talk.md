@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-I received the **Best Student Talk Award** at the [**2025 Palmetto Symposium**](https://x.com/uofscstatistics/status/1913351296750440793?s=20) for our binary spike-and-slab lasso biclustering project (BiSSLB). 
+I received the [Best Student Talk Award](https://x.com/uofscstatistics/status/1913351296750440793?s=20) at the **2025 Palmetto Symposium** for our binary spike-and-slab lasso biclustering project (BiSSLB). 

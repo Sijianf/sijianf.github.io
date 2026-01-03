@@ -391,16 +391,11 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
-            },},{id: "news-a-simple-inline-announcement",
-          title: 'A simple inline announcement.',
+            },},{id: "news-i-received-the-best-student-talk-award-at-the-2025-palmetto-symposium-for-our-binary-spike-and-slab-lasso-biclustering-project-bisslb",
+          title: 'I received the Best Student Talk Award at the 2025 Palmetto Symposium for...',
           description: "",
-          section: "News",},{id: "news-a-long-announcement-with-details",
-          title: 'A long announcement with details',
-          description: "",
-          section: "News",handler: () => {
-              window.location.href = "/news/announcement_2/";
-            },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
-          title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
+          section: "News",},{id: "news-honored-to-receive-the-2025-huynh-feldt-award-presented-by-sarah-schroeder-and-charlotte-dunn-daughters-of-huynh-huynh",
+          title: 'Honored to receive the 2025 Huynh-Feldt Award, presented by Sarah Schroeder and Charlotte...',
           description: "",
           section: "News",},{
         id: 'social-email',

@@ -1052,15 +1052,9 @@ code {
   padding: 3px 3px;
 
   // Inline code should wrap
-  white-space: normal;
+  // white-space: normal;
+  white-space: inherit;
   word-wrap: break-word;
-}
-
-// Fix for BibTeX display
-.bibtex .highlight pre,
-.bibtex pre {
-  white-space: pre-wrap;
-  word-break: break-word;
 }
 
 // Transitioning Themes

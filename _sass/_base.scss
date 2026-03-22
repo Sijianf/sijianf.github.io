@@ -1031,10 +1031,10 @@ pre {
   padding: 6px 12px;
 
   // Responsive behavior for code blocks
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-  white-space: pre;
-  word-wrap: normal;
+  // overflow-x: auto;
+  // -webkit-overflow-scrolling: touch;
+  // white-space: pre;
+  // word-wrap: normal;
 
   pre,
   code {
@@ -1052,8 +1052,8 @@ code {
   padding: 3px 3px;
 
   // Inline code should wrap
-  white-space: normal;
-  word-wrap: break-word;
+  // white-space: normal;
+  // word-wrap: break-word;
 }
 
 // Transitioning Themes

@@ -1,47 +1,44 @@
 ---
 ---
 
-@article{fan2026bisslb,
-  title       = {Binary Spike-and-Slab Lasso Biclustering},
-  author      = {Fan, Sijian and Bai, Ray},
-  year        = {2026+},
-  journal     = {Preparation},
-  abbr        = {Preparation},
-  abstract    = {
-                 Binary biclustering is a crucial analytical technique for identifying local patterns in binary data matrices, with applications spanning genomics, text mining, and market analysis. In this study, we propose a novel statistical methodology for binary biclustering called Binary Spike-and-Slab Lasso Biclustering (BiSSLB), which enhances both accuracy and interpretability. Our approach is based on a logistic matrix factorization model with spike-and-slab lasso priors that enable adaptive shrinkage of latent spaces to exact zeros. To automatically determine the number of biclusters, we incorporate Indian Buffet Process (IBP) priors, which induce column-wise sparsity in the latent space. Furthermore, we employ a highly efficient coordinate descent method with proximal steps, allowing for scalable estimation in large-scale real-world applications.
-                 
-                 <br><br>
-                 To assess the effectiveness of our method, we conduct extensive comparisons against established biclustering techniques, including Bimax, BiBit, iBBiG, and GBC. Performance is evaluated using both simulated datasets and real gene expression datasets, with key metrics including clustering error (CE), consensus score (CS), recovery, relevance, sensitivity, specificity, Matthews correlation coefficient (MCC), and the number of biclusters (K). Experimental results demonstrate that our proposed method accurately estimates the true number of biclusters, regardless of overlapping regions or background noise. Additionally, our method consistently outperforms state-of-the-art approaches in binary biclustering, achieving higher CE, CS, and MCC—three comprehensive metrics for overall comparison.
-                 
-                 <br><br>
-                 The proposed methodology advances binary biclustering by offering improved bicluster determination, enhanced robustness to noisy data, and greater interpretability in binary gene expression analysis. Future research directions include integrating side information into the model and extending it to multi-class data, further enhancing its applicability for differential gene expression analysis, as well as broader domains such as recommender systems, drug discovery, and bibliometric studies.
-                 },
-  code        = {https://github.com/Sijianf/BiSSLB},
-  bibtex_show = {true},
-  selected    = {true}
+@misc{fan2026bvsimcbayesianvariableselectionguided,
+  title         = {BVSIMC: Bayesian Variable Selection-Guided Inductive Matrix Completion for Improved and Interpretable Drug Discovery},
+  author        = {Sijian Fan and Liyan Xiong and Dayuan Wang and Guoshuai Cai and Ray Bai},
+  year          = {2026},
+  eprint        = {2603.18957},
+  archiveprefix = {arXiv},
+  primaryclass  = {cs.LG},
+  url           = {https://arxiv.org/abs/2603.18957},
+  abstract      = {
+                   Recent advances in drug discovery have demonstrated that incorporating side information (e.g., chemical properties about drugs and genomic information about diseases) often greatly improves prediction performance. However, these side features can vary widely in relevance and are often noisy and high-dimensional. We propose Bayesian Variable Selection-Guided Inductive Matrix Completion (BVSIMC), a new Bayesian model that enables variable selection from side features in drug discovery. By learning sparse latent embeddings, BVSIMC improves both predictive accuracy and interpretability. We validate our method through simulation studies and two drug discovery applications: 1) prediction of drug resistance in Mycobacterium tuberculosis, and 2) prediction of new drug-disease associations in computational drug repositioning. On both synthetic and real data, BVSIMC outperforms several other state-of-the-art methods in terms of prediction. In our two real examples, BVSIMC further reveals the most clinically meaningful side features.
+                   },
+  code          = {https://github.com/Sijianf/BiSSGL},
+  keywords      = {arXiv},
+  bibtex_show   = {true},
+  selected      = {true}
 }
 
-@article{fan2026bissgl,
-  title       = {Binary Spike-and-Slab Group Lasso for Inductive Matrix Completion},
-  author      = {Fan, Sijian and Bai, Ray},
-  year        = {2026+},
-  journal     = {Preparation},
-  abbr        = {Preparation},
-  abstract    = {
-                 Matrix completion problems increasingly arise in applications where, in addition to a partially observed matrix, rich side information is available on the rows and columns. Inductive matrix completion (IMC) incorporates such side features to improve prediction, but most existing methods do not explicitly perform feature selection, which is crucial when side information is high-dimensional, heterogeneous in quality, or both. In computational drug repositioning, for example, integrating large-scale genetic and clinical features can enhance the prediction of novel drug--disease associations, yet it is equally important to identify which features are truly informative.
-                 
-                 <br><br>
-                 Existing IMC methods with feature selection, such as sparse-group penalty inductive matrix completion (SGIMC), encourage row-wise sparsity in the factor matrices and therefore select side features at the group level. However, SGIMC impose uniform shrinkage across features and assume that each selected feature affects all rows or all columns of the target matrix. This can be overly restrictive in practice, especially for binary response matrices that arise in 1-bit matrix completion settings, such as drug--disease association matrices.
-                 
-                 <br><br>
-                 We propose binary inductive matrix completion with spike-and-slab group lasso (BiSSGL), a Bayesian framework for IMC with binary outcomes that performs adaptive, group-structured feature selection through spike-and-slab group lasso priors on the latent matrices. BiSSGL yields sparse estimates of the latent factors, enabling automatic identification of influential row and column side features while allowing their effects to vary across different entries of the matrix. Simulation studies indicate that BiSSGL can achieve superior predictive performance in matrix completion while recovering the most informative side features.
-                 
-                 <br><br>
-                 We outline how BiSSGL can be applied to drug repositioning, where side information includes genomic and pharmacological annotations and chemical properties, and discuss ongoing work on extending the algorithm to more complex high-dimensional side information, conducting large-scale simulations to assess scalability, and implementing BiSSGL on non-binary scenarios.
-                 },
-  code        = {https://github.com/Sijianf/BiSSGL},
-  bibtex_show = {true},
-  selected    = {false}
+@misc{fan2026bisslbbinaryspikeandslablasso,
+  title         = {BiSSLB: Binary Spike-and-Slab Lasso Biclustering},
+  author        = {Sijian Fan and Ray Bai},
+  year          = {2026},
+  eprint        = {2603.18378},
+  archiveprefix = {arXiv},
+  primaryclass  = {stat.ME},
+  url           = {https://arxiv.org/abs/2603.18378},
+  abstract      = {
+                   Binary biclustering is a crucial analytical technique for identifying local patterns in binary data matrices, with applications spanning genomics, text mining, and market analysis. In this study, we propose a novel statistical methodology for binary biclustering called Binary Spike-and-Slab Lasso Biclustering (BiSSLB), which enhances both accuracy and interpretability. Our approach is based on a logistic matrix factorization model with spike-and-slab lasso priors that enable adaptive shrinkage of latent spaces to exact zeros. To automatically determine the number of biclusters, we incorporate Indian Buffet Process (IBP) priors, which induce column-wise sparsity in the latent space. Furthermore, we employ a highly efficient coordinate descent method with proximal steps, allowing for scalable estimation in large-scale real-world applications.
+                   
+                   <br><br>
+                   To assess the effectiveness of our method, we conduct extensive comparisons against established biclustering techniques, including Bimax, BiBit, iBBiG, and GBC. Performance is evaluated using both simulated datasets and real gene expression datasets, with key metrics including clustering error (CE), consensus score (CS), recovery, relevance, sensitivity, specificity, Matthews correlation coefficient (MCC), and the number of biclusters (K). Experimental results demonstrate that our proposed method accurately estimates the true number of biclusters, regardless of overlapping regions or background noise. Additionally, our method consistently outperforms state-of-the-art approaches in binary biclustering, achieving higher CE, CS, and MCC—three comprehensive metrics for overall comparison.
+                   
+                   <br><br>
+                   The proposed methodology advances binary biclustering by offering improved bicluster determination, enhanced robustness to noisy data, and greater interpretability in binary gene expression analysis. Future research directions include integrating side information into the model and extending it to multi-class data, further enhancing its applicability for differential gene expression analysis, as well as broader domains such as recommender systems, drug discovery, and bibliometric studies.
+                   },
+  code          = {https://github.com/Sijianf/BiSSLB},
+  keywords      = {arXiv},
+  bibtex_show   = {true},
+  selected      = {true}
 }
 
 @article{reed2024predictors,

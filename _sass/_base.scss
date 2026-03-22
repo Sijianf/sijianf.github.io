@@ -1056,6 +1056,13 @@ code {
   word-wrap: break-word;
 }
 
+// Fix for BibTeX display
+.bibtex .highlight pre,
+.bibtex pre {
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
 // Transitioning Themes
 html.transition,
 html.transition *,

@@ -1,27 +1,35 @@
 metadata:
-  last_updated: '2026-03-11'
+  last_updated: '2026-05-01'
 papers:
   c_EDT28AAAAJ:2osOgNQ5qMEC:
     citations: 1
     title: Improved algorithm for independent component analysis (ica) with the relax and split approximation
     year: '2020'
   c_EDT28AAAAJ:9yKSN-GCB0IC:
-    citations: 8
+    citations: 9
     title: "Prophylactic IVC filter placement in patients with severe intracranial, spinal cord, and orthopedic injuries at high thromboembolic event risk: a utilization and outcomes \u2026"
     year: '2022'
+  c_EDT28AAAAJ:IjCSPb-OGe4C:
+    citations: 0
+    title: 'BiSSLB: Binary Spike-and-Slab Lasso Biclustering'
+    year: '2026'
   c_EDT28AAAAJ:d1gkVwhDpl0C:
     citations: 11
     title: Predictors of developmental defects of enamel in primary maxillary central incisors using Bayesian model selection
     year: '2024'
   c_EDT28AAAAJ:qjMakFHDy7sC:
-    citations: 5
+    citations: 6
     title: 'Comparative effectiveness of pelvic arterial embolization versus laparotomy in adults with pelvic injuries: a National Trauma Data Bank analysis'
     year: '2022'
   c_EDT28AAAAJ:u-x6o8ySG0sC:
-    citations: 27
+    citations: 28
     title: 'Contemporary management of pediatric blunt splenic trauma: a national trauma databank analysis'
     year: '2021'
   c_EDT28AAAAJ:u5HHmVD_uO8C:
-    citations: 21
-    title: 'Management of splenic trauma in contemporary clinical practice: a national trauma data bank study'
+    citations: 23
+    title: 'Management of splenic trauma in contemporary clinical practice: a National Trauma Data Bank study'
     year: '2021'
+  c_EDT28AAAAJ:zYLM7Y9cAGgC:
+    citations: 0
+    title: 'BVSIMC: Bayesian Variable Selection-Guided Inductive Matrix Completion for Improved and Interpretable Drug Discovery'
+    year: '2026'

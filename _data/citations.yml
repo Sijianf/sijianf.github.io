@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-05-25'
+  last_updated: '2026-05-29'
 papers:
   c_EDT28AAAAJ:2osOgNQ5qMEC:
     citations: 1
@@ -14,7 +14,7 @@ papers:
     title: 'BiSSLB: Binary Spike-and-Slab Lasso Biclustering'
     year: '2026'
   c_EDT28AAAAJ:d1gkVwhDpl0C:
-    citations: 12
+    citations: 13
     title: Predictors of developmental defects of enamel in primary maxillary central incisors using Bayesian model selection
     year: '2024'
   c_EDT28AAAAJ:qjMakFHDy7sC:
@@ -26,7 +26,7 @@ papers:
     title: 'Contemporary management of pediatric blunt splenic trauma: a national trauma databank analysis'
     year: '2021'
   c_EDT28AAAAJ:u5HHmVD_uO8C:
-    citations: 23
+    citations: 24
     title: 'Management of splenic trauma in contemporary clinical practice: a National Trauma Data Bank study'
     year: '2021'
   c_EDT28AAAAJ:zYLM7Y9cAGgC:
